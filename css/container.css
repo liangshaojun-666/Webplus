@@ -1,0 +1,486 @@
+/* 中等和大屏幕：针对较大的屏幕（台式机、笔记本电脑）进行样式设置 */
+@media screen and (min-width: 992px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* 隐藏页面的滚动条 */
+  }
+
+  .containerBox {
+    width: 100vw;
+    display: flex;
+  }
+/* 左侧样式开始 */
+  .foldGroup {
+    width: 75vw;  
+  }
+.msgBox{
+  width: 80%;
+  background-color: #ffffff;
+  margin-left: 17%;
+  margin-top: 1%;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid #ccc ;
+}
+.msgBox:first-child {
+
+  margin-left: 17%;margin-top: 5%;
+}
+.msgBox:nth-child(7) {
+margin-bottom: 9%;
+}
+.header_msg{
+  background-color: #4e1266;
+  height: 72px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.title{
+  font-size: 1.3rem;
+  padding: 0 7rem 0 3rem;
+}
+.main_msg{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding:1rem 2rem 0 2rem;
+}
+/* 单个盒子 */
+.detailBox{
+  box-sizing: border-box;
+  height: 135px;
+  width: 22%;
+border: 1px solid #000;
+margin-bottom: 0.9rem;
+margin-left: 0.8rem;
+border-radius: 7px;border-color: #ccc;
+}
+.msg_title {
+  width: 100%;
+  height: 35%;
+  /* background-color: aqua; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+.msg_title a{
+    text-decoration: none;
+      outline: none;
+      color: #000;
+}
+.msg_title::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #861b5c;
+  position: absolute;
+  bottom: -2px;
+  /* 将bottom值调整为-5px，使其位于底部稍微上一点 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.msg_content{
+  height: 65%;
+  padding: 0.6rem 0.5rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+.msg_content div{
+  font-size: 0.6vw;
+color: #909090;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右侧样式再次开始 */
+  .itemlist {
+    width: 25vw;
+    height: 1000px;
+  }
+}
+
+
+
+
+
+/* 小屏幕：针对中等尺寸的移动设备（平板电脑）进行样式设置。 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* 隐藏页面的滚动条 */
+  }
+
+  .containerBox {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .itemlist {
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+    height: 500px;
+  }
+
+  .itemlist.open {
+    max-height: 1000px;
+    /* 设置为展开时的最大高度 */
+    transition: max-height 0.5s ease;
+  }
+
+  .foldGroup {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+        .msgBox {
+          width:96%;
+          background-color: #ffffff;
+
+          margin-top: 1%;
+          border-radius: 0.5rem;
+          overflow: hidden;
+          border: 1px solid #ccc;
+        }
+    
+        .msgBox:first-child {
+          margin-top: 2%;
+        }
+    
+        .msgBox:nth-child(7) {
+          margin-bottom: 9%;
+        }
+    
+        .header_msg {
+          background-color: #4e1266;
+          height: 130px;
+          color: #ffffff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+        }
+    
+        .title {
+          font-size: 2.3rem;
+          padding: 0 7rem 0 3rem;
+          font-weight: bolder;
+
+        }
+        .introduction{
+            font-size: 1.7rem;
+              padding: 0 7rem 0 3rem;
+        }
+    
+        .main_msg {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 1rem 2vw 0 1vw;
+        }
+    
+        /* 单个盒子 */
+        .detailBox {
+          box-sizing: border-box;
+          height: 135px;
+          width: 48%;
+          border: 1px solid #000;
+          margin-bottom: 0.9rem;
+          margin-left: 0.5vw;
+          border-radius: 7px;
+          border-color: #ccc;
+        }
+    
+        .msg_title {
+          width: 100%;
+          height: 35%;
+          /* background-color: aqua; */
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bolder;
+          font-size: 2rem;
+        }
+    
+        .msg_title a {
+          text-decoration: none;
+          outline: none;
+          color: #000;
+        }
+    
+        .msg_title::before {
+          content: "";
+          display: block;
+          width: 50px;
+          height: 2px;
+          background: #861b5c;
+          position: absolute;
+          bottom: -2px;
+          /* 将bottom值调整为-5px，使其位于底部稍微上一点 */
+          left: 50%;
+          transform: translateX(-50%);
+        }
+    
+        .msg_content {
+          height: 65%;
+          padding: 0.6rem 0.5rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+    
+        .msg_content div {
+          font-size: 2vw;
+          color: #909090;
+        }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    /* 右侧样式再次开始 */
+    .itemlist {
+      width: 25vw;
+      background-color: rgb(20, 106, 77);
+      height: 1000px;
+    }
+    
+
+
+}
+
+/* 针对较小的移动设备（手机）进行样式设置 */
+@media screen and (max-width: 767px) {body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* 隐藏页面的滚动条 */
+  }
+
+  .containerBox {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .itemlist {
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+    height: 500px;
+  }
+
+  .itemlist.open {
+    max-height: 1000px;
+    /* 设置为展开时的最大高度 */
+    transition: max-height 0.5s ease;
+  }
+
+  .foldGroup {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .msgBox {
+    width: 96%;
+    background-color: #ffffff;
+    margin-top: 1%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+
+  .msgBox:first-child {
+    margin-top: 2%;
+  }
+
+  .msgBox:nth-child(7) {
+    margin-bottom: 9%;
+  }
+
+  .header_msg {
+    background-color: #4e1266;
+    height: 130px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    padding: 0 4rem 1rem 2rem;
+    font-weight: bolder;
+
+  }
+
+  .introduction {
+    font-size: 1.1rem;
+    padding: 0 4rem 0 2rem;
+  }
+
+  .main_msg {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 2vw 0 1vw;
+  }
+
+  /* 单个盒子 */
+  .detailBox {
+    box-sizing: border-box;
+    height: 150px;
+    width: 45%;
+    border: 1px solid #000;
+    margin-bottom: 0.9rem;
+    margin-left: 2.2vw;
+    border-radius: 7px;
+    border-color: #ccc;
+  }
+
+  .msg_title {
+    width: 100%;
+    height: 35%;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+
+  .msg_title a {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+  }
+
+  .msg_title::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #861b5c;
+    position: absolute;
+    bottom: -2px;
+    /* 将bottom值调整为-5px，使其位于底部稍微上一点 */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .msg_content {
+    height: 65%;
+    padding: 0.6rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .msg_content div {
+    font-size: 1vw;
+    color: #909090;
+  }
+
+
+  /* 右侧样式再次开始 */
+  .itemlist {
+    width: 25vw;
+    background-color: rgb(20, 106, 77);
+    height: 1000px;
+  }}

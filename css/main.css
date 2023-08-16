@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    width: 100vw;
+    font-family: sans-serif; /* 默认字体 */
+    font-size: 16px; /* 调整字体大小 */
+    -ms-text-size-adjust: 100%; /* IE浏览器 */
+   -webkit-text-size-adjust: 100%; /* FireFox浏览器 */
+}
+/* 隐藏鼠标点击这些元素时出现的光标 */
+div,
+span,
+p,
+textarea {
+  caret-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  /* 去除默认下划线 */
+}
+
+a:focus {
+  outline: thin dotted;
+  /* 处理“outline”在Chrome浏览器中和其它浏览器之间的不一致 */
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
