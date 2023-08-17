@@ -86,7 +86,7 @@ display: none;
 
 
 
-/* 小屏幕：针对中等尺寸的移动设备（平板电脑）进行样式设置。 */
+/* 中屏幕：针对中等尺寸的移动设备（平板电脑）进行样式设置。 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
 
@@ -173,7 +173,7 @@ background-color: #7e1174;
                                  display: flex;
                                  align-items: center;
                                  /* background-color: #a249d6; */
-                                 font-size: 1.5rem;
+                                 font-size: 2rem;
                                  color: #eeeeee;
                                  cursor: pointer;
                                 }

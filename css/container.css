@@ -1,4 +1,4 @@
-/* 中等和大屏幕：针对较大的屏幕（台式机、笔记本电脑）进行样式设置 */
+/* 大屏幕：针对较大的屏幕（台式机、笔记本电脑）进行样式设置 */
 @media screen and (min-width: 992px) {
   body {
     margin: 0;
@@ -97,60 +97,71 @@ justify-content: space-evenly;
   font-size: 0.6vw;
 color: #909090;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------- */
 
 /* 右侧样式再次开始 */
   .itemlist {
     width: 25vw;
-    height: 1000px;
+    padding-left: 35px;
   }
+  .navTitle{
+    width: 55%;
+    font-size: 20px;
+      background: #861b5c;
+      line-height: 43px;
+      font-weight: bold;
+      text-indent: 19px;
+      color: #fff;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  .list_Tit{
+    display: flex;
+    align-items: center;   
+    padding: 0 0 6px 0;
+  }
+  .news_list{
+    margin-bottom: 1rem;
+  }
+  .news a,
+  .news{
+    text-decoration: none;
+      list-style: none;
+      color: inherit;
+  }
+.news a,
+.news a {
+  outline: none;
+}
+.news{
+  padding: 2px 0;
+}
+.news_title{
+  position: relative;
+  padding-left: 15px;
+}
+.news_title::before{
+    content: '';
+    border: 7px solid #dadada;
+    border-top-color: rgb(218, 218, 218);
+    border-right-color: rgb(218, 218, 218);
+    border-bottom-color: rgb(218, 218, 218);
+    border-left-color: rgb(218, 218, 218);
+    border-color: transparent transparent transparent #dadada;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+
 }
 
 
 
 
 
-/* 小屏幕：针对中等尺寸的移动设备（平板电脑）进行样式设置。 */
+/* 中屏幕：针对中等尺寸的移动设备（平板电脑）进行样式设置。 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   body {
     margin: 0;
@@ -169,11 +180,13 @@ color: #909090;
     max-height: 0;
     transition: max-height 0.5s ease;
     overflow: hidden;
-    height: 500px;
-  }
 
+  }
+.navTitle{
+  display: none;
+}
   .itemlist.open {
-    max-height: 1000px;
+max-height: 3500px;
     /* 设置为展开时的最大高度 */
     transition: max-height 0.5s ease;
   }
@@ -290,63 +303,88 @@ color: #909090;
         }
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    /* -------------------------------------------------------------------------- */
   
     /* 右侧样式再次开始 */
     .itemlist {
-      width: 25vw;
-      background-color: rgb(20, 106, 77);
-      height: 1000px;
+      width: 100%;
+      padding-left: 35px;
     }
-    
+  
+    .list_Tit {
+      display: flex;
+      align-items: center;
+      padding: 18px 0 6px 0;
+      font-size: 2.2rem;
+    }
+  
+    .news_list {
+      margin-bottom: 1rem;
+    }
+  
+    .news a,
+    .news {
+      text-decoration: none;
+      list-style: none;
+      color: inherit;
+    }
+  
+    .news a,
+    .news a {
+      outline: none;
+    }
+  
+    .news {
+      padding: 2px 0;
+    }
+  
+    .news_title {
+      position: relative;
+      padding-left: 25px;
+      font-size: 1.5rem;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  .news_title:active{
 
+background-color: #cfcdcd;
+  }
+    .news_title::before {
+      content: '';
+      border: 9px solid #dadada;
+      border-top-color: rgb(218, 218, 218);
+      border-right-color: rgb(218, 218, 218);
+      border-bottom-color: rgb(218, 218, 218);
+      border-left-color: rgb(218, 218, 218);
+      border-color: transparent transparent transparent #dadada;
+      display: block;
+      position: absolute;
+      left: 0px;
+      top: 15px;
+    }
 
+.list_Tit{
+  border-top: 1px solid #c2c2c2;
+}
+.list_Tit:first-child{
+  border-top: none;
+}
 }
 
+
+
+
 /* 针对较小的移动设备（手机）进行样式设置 */
-@media screen and (max-width: 767px) {body {
+@media screen and (max-width: 767px) {
+  body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     /* 隐藏页面的滚动条 */
   }
-
+.navTitle {
+  display: none;
+}
   .containerBox {
     width: 100vw;
     display: flex;
@@ -357,11 +395,11 @@ color: #909090;
     max-height: 0;
     transition: max-height 0.5s ease;
     overflow: hidden;
-    height: 500px;
+
   }
 
   .itemlist.open {
-    max-height: 1000px;
+    max-height: 8000px;
     /* 设置为展开时的最大高度 */
     transition: max-height 0.5s ease;
   }
@@ -478,9 +516,73 @@ color: #909090;
   }
 
 
-  /* 右侧样式再次开始 */
-  .itemlist {
-    width: 25vw;
-    background-color: rgb(20, 106, 77);
-    height: 1000px;
-  }}
+        /* -------------------------------------------------------------------------- */
+    
+        /* 右侧样式再次开始 */
+        .itemlist {
+          width: 100%;
+          padding-left: 15px;
+        }
+    
+        .list_Tit {
+          display: flex;
+          align-items: center;
+          padding: 8px 0 6px 0;
+          font-size: 1rem;
+        }
+    
+        .news_list {
+          margin-bottom: 1rem;
+        }
+    
+        .news a,
+        .news {
+          text-decoration: none;
+          list-style: none;
+          color: inherit;
+        }
+    
+        .news a,
+        .news a {
+          outline: none;
+        }
+    
+        .news {
+          padding: 2px 0;
+        }
+    
+        .news_title {
+          position: relative;
+          padding-left: 15px;
+          font-size: 0.8rem;
+          padding-top: 3px;
+          padding-bottom: 3px;
+        }
+    
+        .news_title:active {
+    
+          background-color: #cfcdcd;
+        }
+    
+        .news_title::before {
+          content: '';
+          border: 6px solid #dadada;
+          border-top-color: rgb(218, 218, 218);
+          border-right-color: rgb(218, 218, 218);
+          border-bottom-color: rgb(218, 218, 218);
+          border-left-color: rgb(218, 218, 218);
+          border-color: transparent transparent transparent #dadada;
+          display: block;
+          position: absolute;
+          left: 0px;
+          top: 6px;
+        }
+    
+        .list_Tit {
+          border-top: 1px solid #c2c2c2;
+        }
+    
+        .list_Tit:first-child {
+          border-top: none;
+        }
+}

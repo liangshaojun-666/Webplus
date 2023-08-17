@@ -1,0 +1,457 @@
+/* 大屏幕：针对较大的屏幕（台式机、笔记本电脑）进行样式设置 */
+@media screen and (min-width: 992px) {
+  .inner{
+    width: 100%;
+    height: 520px;
+    background-color: #311237;
+    position: relative;
+  }
+.mainMsg{
+  height: 420px;
+  width: 100%;
+  display: flex;flex-wrap: wrap;
+  flex-direction: row;
+ align-items: center;
+}
+
+/* ------------左------------ */
+.footLeft{
+  width: 35%;
+  margin-left: 4rem;
+}
+
+.left{
+  font-size: 24px;
+  color: #989698;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+.copyright_left{
+  font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    color: #989698;
+}
+.special{
+  margin-bottom: 1.2rem;
+}
+/* ------------左------------ */
+
+
+
+/* ------------中------------ */
+.footCenter {
+  width: 40%;
+  /* background-color: rgb(175, 127, 219); */
+    height: 75%;
+      padding-left: 2rem;
+      border-left: 0.8px solid #f7f0f7;
+}
+.center {
+  font-size: 14px;
+  color: #fff;
+  padding-top: 1.5rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+.cen_flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cen_flex li{
+    text-decoration: none;
+      list-style: none;
+}
+.cen_flex a {
+  color: inherit;
+}
+.cen_flex a:active,
+.cen_flex a:focus
+ {
+outline: nones;
+}
+.cen_title{
+  color: #bebdbe;font-size: 13px;
+    line-height: 28px;
+}
+.news_fbt{
+  /* 电话号码 */
+    color: #bebdbe;
+      font-size: 13px;
+      line-height: 28px;
+}
+.news_text{
+line-height: 22px;
+  color: #666;font-size: 13px;
+    font-family: "Arial", "Microsoft YaHei", "\u5b8b\u4f53", Tahoma, Geneva, sans-serif;
+}
+.n{
+  width: 40%;
+}
+/* ------------中------------ */
+
+
+/* ------------右------------ */
+.footerRight {
+  width: 20%;
+  height: 75%;
+  padding-left: 2rem;
+  border-left: 0.8px solid #f7f0f7;
+}
+.right {
+  font-size: 14px;
+  color: #fff;
+  padding-top: 1.5rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+.copyright_right{
+    font-size: 13px;
+      line-height: 24px;
+      font-weight: normal;
+      text-align: left;
+      color: #989698;
+}
+.copyright_right:hover{
+  color: #fff;
+}
+/* ------------右------------ */
+
+
+
+
+
+
+
+  .buttomMsg{
+    height: 100px;
+    background-color: rgb(48, 38, 50);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+/* 中屏幕：针对中等尺寸的移动设备（平板电脑）进行样式设置。 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .inner {
+      width: 100%;
+      height: 820px;
+      background-color: #311237;
+      position: relative;
+    }
+  
+    .mainMsg {
+      height: 620px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    /* ------------左------------ */
+    .footLeft {
+      width: 100%;
+      height: 45%;
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+  
+    .left {
+      font-size: 24px;
+      color: #fff;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+  
+    .copyright_left {
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: normal;
+      text-align: left;
+      color: #989698;
+    }
+  
+    .special {
+      margin-bottom: 1.2rem;
+    }
+  
+    /* ------------左------------ */
+  
+  
+  
+    /* ------------中------------ */
+    .footCenter {
+      width: 40%;
+      /* background-color: rgb(175, 127, 219); */
+      height: 55%;
+      padding-left: 4rem;
+    }
+  
+    .center {
+      font-size: 14px;
+      color: #fff;
+      padding-top: 1.5rem;
+      margin-left: 4rem;
+      margin-bottom: 2rem;
+    }
+  
+    .cen_flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .cen_flex li {
+      text-decoration: none;
+      list-style: none;
+    }
+  
+    .cen_flex a {
+      color: inherit;
+    }
+  
+    .cen_flex a:active,
+    .cen_flex a:focus {
+      outline: nones;
+    }
+  
+    .cen_title {
+      color: #bebdbe;
+      font-size: 13px;
+      line-height: 28px;
+    }
+  
+    .news_fbt {
+      /* 电话号码 */
+      color: #bebdbe;
+      font-size: 13px;
+      line-height: 28px;
+    }
+  
+    .news_text {
+      line-height: 22px;
+      color: #666;
+      font-size: 13px;
+      font-family: "Arial", "Microsoft YaHei", "\u5b8b\u4f53", Tahoma, Geneva, sans-serif;
+    }
+  
+    .n {
+      width: 40%;
+    }
+  
+    /* ------------中------------ */
+  
+  
+    /* ------------右------------ */
+    .footerRight {
+      width: 50%;
+      height: 55%;
+      padding-left: 8rem;
+
+    }
+  
+    .right {
+      font-size: 14px;
+      color: #fff;
+      padding-top: 1.5rem;
+      margin-left: 4rem;
+      margin-bottom: 2rem;
+    }
+  
+    .copyright_right {
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: normal;
+      text-align: left;
+      color: #989698;
+    }
+  
+    .copyright_right:hover {
+      color: #fff;
+    }
+  
+    /* ------------右------------ */
+    .buttomMsg {
+      height: 100px;
+      background-color: rgb(48, 38, 50);
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 3rem;
+    }
+}
+
+
+
+
+/* 针对较小的移动设备（手机）进行样式设置 */
+@media screen and (max-width: 767px) {
+.inner {
+    width: 100%;
+    height: 1000px;
+    background-color: #311237;
+    position: relative;
+  }
+
+  .mainMsg {
+    height: 820px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* ------------左------------ */
+  .footLeft {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .copyright_left {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    color: #989698;
+  }
+
+  .special {
+    margin-bottom: 1.2rem;
+  }
+
+  /* ------------左------------ */
+
+
+
+  /* ------------中------------ */
+  .footCenter {
+    width: 100%;
+    /* background-color: rgb(175, 127, 219); */
+    height: 35%;
+    padding-left: 1.5rem;
+  }
+
+  .center {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .cen_flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cen_flex li {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .cen_flex a {
+    color: inherit;
+  }
+
+  .cen_flex a:active,
+  .cen_flex a:focus {
+    outline: nones;
+  }
+
+  .cen_title {
+    color: #bebdbe;
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .news_fbt {
+    /* 电话号码 */
+    color: #bebdbe;
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .news_text {
+    line-height: 22px;
+    color: #666;
+    font-size: 13px;
+    font-family: "Arial", "Microsoft YaHei", "\u5b8b\u4f53", Tahoma, Geneva, sans-serif;
+  }
+
+  .n {
+    width: 40%;
+  }
+
+  /* ------------中------------ */
+
+
+  /* ------------右------------ */
+  .footerRight {
+    width: 100%;
+    height: 55%;
+    padding-left: 2rem;
+
+  }
+
+  .right {
+    font-size: 14px;
+    color: #fff;
+    padding-top: 1.5rem;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .copyright_right {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    color: #989698;
+  }
+
+  .copyright_right:hover {
+    color: #fff;
+  }
+
+  /* ------------右------------ */
+  .buttomMsg {
+    height: 100px;
+    background-color: rgb(48, 38, 50);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+  }
+}
