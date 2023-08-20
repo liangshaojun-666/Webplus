@@ -455,17 +455,17 @@ background-color: #cfcdcd;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 2vw 0 1vw;
+    margin: 1rem 2vw 0 2vw;
   }
 
   /* 单个盒子 */
   .detailBox {
     box-sizing: border-box;
     height: 150px;
-    width: 45%;
+    width: 42%;
     border: 1px solid #000;
     margin-bottom: 0.9rem;
-    margin-left: 2.2vw;
+    margin-left: 3.8vw;
     border-radius: 7px;
     border-color: #ccc;
   }
